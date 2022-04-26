@@ -1,4 +1,4 @@
-module github.com/Mrs4s/go-cqhttp
+module github.com/IIIOTL/custom-go-cqhttp
 
 go 1.17
 

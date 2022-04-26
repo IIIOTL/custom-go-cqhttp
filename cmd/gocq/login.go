@@ -13,7 +13,7 @@ import (
 	"github.com/pkg/errors"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Mrs4s/go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
 )
 
 var console = bufio.NewReader(os.Stdin)

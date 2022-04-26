@@ -17,11 +17,11 @@ import (
 	"github.com/tidwall/gjson"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/modules/api"
-	"github.com/Mrs4s/go-cqhttp/modules/config"
-	"github.com/Mrs4s/go-cqhttp/modules/filter"
+	"github.com/IIIOTL/custom-go-cqhttp/coolq"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/api"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/config"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/filter"
 )
 
 type webSocketServer struct {

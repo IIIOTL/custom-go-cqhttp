@@ -13,9 +13,9 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/opt"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/modules/config"
+	"github.com/IIIOTL/custom-go-cqhttp/db"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/config"
 )
 
 type LevelDBImpl struct {

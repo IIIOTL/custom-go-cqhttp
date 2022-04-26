@@ -7,9 +7,9 @@ import (
 
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/btree"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/base"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/btree"
 )
 
 // Media Cache DBs

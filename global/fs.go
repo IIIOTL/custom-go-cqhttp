@@ -16,7 +16,7 @@ import (
 	"github.com/Mrs4s/MiraiGo/utils"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Mrs4s/go-cqhttp/internal/param"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/param"
 )
 
 const (

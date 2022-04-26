@@ -9,7 +9,7 @@ import (
 	"github.com/Mrs4s/MiraiGo/message"
 	log "github.com/sirupsen/logrus"
 
-	"github.com/Mrs4s/go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
 )
 
 func convertGroupMemberInfo(groupID int64, m *client.GroupMemberInfo) global.MSG {

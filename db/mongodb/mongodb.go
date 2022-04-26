@@ -9,8 +9,8 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/options"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/modules/config"
+	"github.com/IIIOTL/custom-go-cqhttp/db"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/config"
 )
 
 type MongoDBImpl struct {

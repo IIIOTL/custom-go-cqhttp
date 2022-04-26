@@ -20,16 +20,16 @@ import (
 	"golang.org/x/crypto/pbkdf2"
 	"golang.org/x/term"
 
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/global/terminal"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/cache"
-	"github.com/Mrs4s/go-cqhttp/internal/selfdiagnosis"
-	"github.com/Mrs4s/go-cqhttp/internal/selfupdate"
-	"github.com/Mrs4s/go-cqhttp/modules/servers"
-	"github.com/Mrs4s/go-cqhttp/server"
+	"github.com/IIIOTL/custom-go-cqhttp/coolq"
+	"github.com/IIIOTL/custom-go-cqhttp/db"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/global/terminal"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/servers"
+	"github.com/IIIOTL/custom-go-cqhttp/server"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/base"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/cache"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/selfdiagnosis"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/selfupdate"
 )
 
 // 允许通过配置文件设置的状态列表

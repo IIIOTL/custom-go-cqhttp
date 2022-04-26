@@ -11,11 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Mrs4s/go-cqhttp/global"
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/modules/config"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/config"
 )
 
 // command flags
@@ -141,9 +140,6 @@ func ResetWorkingDir() {
 		}
 	}
 	p, _ := filepath.Abs(os.Args[0])
-	if !global.PathExists(p) {
-		log.Fatalf("重置工作目录时出现错误: 无法找到路径 %v", p)
-	}
 	proc := exec.Command(p, args...)
 	proc.Stdin = os.Stdin
 	proc.Stdout = os.Stdout

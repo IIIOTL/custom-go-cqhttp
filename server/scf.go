@@ -15,10 +15,10 @@ import (
 	log "github.com/sirupsen/logrus"
 	"gopkg.in/yaml.v3"
 
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/global"
-	api2 "github.com/Mrs4s/go-cqhttp/modules/api"
-	"github.com/Mrs4s/go-cqhttp/modules/config"
+	"github.com/IIIOTL/custom-go-cqhttp/coolq"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	api2 "github.com/IIIOTL/custom-go-cqhttp/modules/api"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/config"
 )
 
 type lambdaClient struct {

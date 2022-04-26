@@ -3,8 +3,8 @@
 package api
 
 import (
-	"github.com/Mrs4s/go-cqhttp/coolq"
-	"github.com/Mrs4s/go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/coolq"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
 )
 
 func (c *Caller) call(action string, p Getter) global.MSG {

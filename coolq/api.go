@@ -24,12 +24,12 @@ import (
 	log "github.com/sirupsen/logrus"
 	"github.com/tidwall/gjson"
 
-	"github.com/Mrs4s/go-cqhttp/db"
-	"github.com/Mrs4s/go-cqhttp/global"
-	"github.com/Mrs4s/go-cqhttp/internal/base"
-	"github.com/Mrs4s/go-cqhttp/internal/cache"
-	"github.com/Mrs4s/go-cqhttp/internal/param"
-	"github.com/Mrs4s/go-cqhttp/modules/filter"
+	"github.com/IIIOTL/custom-go-cqhttp/db"
+	"github.com/IIIOTL/custom-go-cqhttp/global"
+	"github.com/IIIOTL/custom-go-cqhttp/modules/filter"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/base"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/cache"
+	"github.com/IIIOTL/custom-go-cqhttp/utils/param"
 )
 
 type guildMemberPageToken struct {
