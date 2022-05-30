@@ -25,12 +25,16 @@ import (
 	"github.com/IIIOTL/custom-go-cqhttp/utils/base"
 )
 
+type EventHandler struct {
+	fn func(*Event)
+}
+
 // CQBot CQBot结构体,存储Bot实例相关配置
 type CQBot struct {
 	Client *client.QQClient
 
 	lock   sync.RWMutex
-	events []func(*Event)
+	events []*EventHandler
 
 	friendReqCache   sync.Map
 	tempSessionCache sync.Map
@@ -125,9 +129,21 @@ func NewQQBot(cli *client.QQClient) *CQBot {
 }
 
 // OnEventPush 注册事件上报函数
-func (bot *CQBot) OnEventPush(f func(e *Event)) {
+func (bot *CQBot) OnEventPush(f *EventHandler) {
 	bot.lock.Lock()
 	bot.events = append(bot.events, f)
+	bot.lock.Unlock()
+}
+
+func (bot *CQBot) RemoveEvent(f *EventHandler) {
+	bot.lock.Lock()
+	filtered := []*EventHandler{}
+	for _, h := range bot.events {
+		if h != f {
+			filtered = append(filtered, h)
+		}
+	}
+	bot.events = filtered
 	bot.lock.Unlock()
 }
 
@@ -570,7 +586,7 @@ func (bot *CQBot) dispatchEventMessage(m global.MSG) {
 			if end.Sub(start) > time.Second*5 {
 				log.Debugf("警告: 事件处理耗时超过 5 秒 (%v), 请检查应用是否有堵塞.", end.Sub(start))
 			}
-		}(f)
+		}(f.fn)
 	}
 	wg.Wait()
 	if event.buffer != nil {
