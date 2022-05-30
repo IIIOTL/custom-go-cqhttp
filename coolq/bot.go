@@ -26,7 +26,7 @@ import (
 )
 
 type EventHandler struct {
-	fn func(*Event)
+	Fn func(*Event)
 }
 
 // CQBot CQBot结构体,存储Bot实例相关配置
@@ -586,7 +586,7 @@ func (bot *CQBot) dispatchEventMessage(m global.MSG) {
 			if end.Sub(start) > time.Second*5 {
 				log.Debugf("警告: 事件处理耗时超过 5 秒 (%v), 请检查应用是否有堵塞.", end.Sub(start))
 			}
-		}(f.fn)
+		}(f.Fn)
 	}
 	wg.Wait()
 	if event.buffer != nil {
